@@ -15,7 +15,7 @@
       array_push($attr_return, "$key=$value");
     }
     
-    return implode('&', $attr_return);
+    return urlencode(implode('&', $attr_return));
   }
 
 ?>

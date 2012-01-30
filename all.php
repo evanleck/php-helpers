@@ -2,6 +2,7 @@
   
   # pulls in all the helper methods available
   require_once 'curl_post.php';
+  require_once 'from_qs.php';
   require_once 'get_file.php';
   require_once 'h.php';
   require_once 'input_for.php';
