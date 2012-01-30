@@ -2,6 +2,7 @@
 
   /*
     a nice little function to notify someone of something
+      note: this should only be called programatically, there is no HTML unescaping or sanitization performed on the text to be emailed.
   */
   function notify_developers($text = '') {
     if ($text != '') {

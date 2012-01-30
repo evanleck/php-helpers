@@ -7,7 +7,6 @@
     $defaults = array(
       'href'  => '#',
       'text'  => 'Placeholder Text',
-      'id'    => '',
       'class' => ''
     );
     
@@ -27,11 +26,7 @@
     }
     
     $text = $options['text'];
-    unset($options['text']);
-    
-    if (empty($options['id'])) {
-      unset($options['id']);
-    }
+    unset($options['text']); # because that's not an attribute of this thing!
     
     return "<a " . to_attr($options) . ">$text</a>";
   }
